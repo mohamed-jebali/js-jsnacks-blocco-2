@@ -1,11 +1,9 @@
 let listNumber = [];
 let inputNumber = 0;
 
-while(inputNumber < 50){
-    parseInt (prompt("Inserisci un Numero"));
+while(inputNumber < 50 && inputNumber == 50){
+    inputNumber = parseInt (prompt("Inserisci un Numero"));
     console.log(inputNumber.push);
 
-    if(inputNumber > 50){
-        console.log()
-    }
 }
+console.log(listNumber);
