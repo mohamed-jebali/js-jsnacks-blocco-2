@@ -2,8 +2,8 @@
 // Verificare tramite una funzione che le due parole abbiano la stessa lunghezza.
 // Se hanno la stessa lunghezza, stamparle entrambe altrimenti stampare la più lunga delle due.
 
-let firstWord = prompt("inserisci la prima parola");
-let secondWord = prompt("inserisci la seconda parola");
+let parolaUno = prompt("inserisci la prima parola");
+let parolaDue = prompt("inserisci la seconda parola");
 
 
     if(firstWord.length > secondWord.length){
