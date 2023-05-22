@@ -24,3 +24,4 @@ while(!indovinato){
 if(indovinato === true){
     console.log("hai indovinato!");
 }
+

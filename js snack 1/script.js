@@ -1,9 +1,11 @@
 let listNumber = [];
-let inputNumber = 0;
+let sum = 0;
 
-while(inputNumber < 50 && inputNumber == 50){
-    inputNumber = parseInt (prompt("Inserisci un Numero"));
-    listNumber.push(inputNumber);
+
+while(sum < 50){
+  let inputNumber = parseInt(prompt("Inserisci un numero:"));
+  listNumber.push(inputNumber);
+  sum += inputNumber;
 
 }
-console.log(listNumber);
+console.log("fine del ciclo" ,listNumber);
