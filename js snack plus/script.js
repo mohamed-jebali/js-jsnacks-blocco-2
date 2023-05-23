@@ -8,3 +8,20 @@
  * BONUS:
  * Se clicchiamo sul li il suo testo verrà sbarrato.
  */
+
+
+
+
+let ulElement = document.querySelector(".list");
+
+function addLiElement(liElementItem){
+    let liElement = document.createElement("li");
+    
+    return liElement;
+}
+
+for(i = 0; i < 10 ;i++){
+
+    let liItem = addLiElement(i);
+    ulElement.appendChild("liItem");
+}
