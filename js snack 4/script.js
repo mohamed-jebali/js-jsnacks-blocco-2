@@ -12,7 +12,7 @@ let parolaDue = prompt("inserisci la seconda parola");
     else if(firstWord.length < secondWord.length){
         console.log("la seconda parola è piu lunga");
     }
-    else{
+    else if(lengthWord (firstWord,secondWord)){
         console.log("le due parole hanno la stessa lunghezza " + secondWord,firstWord);
     }
 
@@ -22,4 +22,8 @@ let parolaDue = prompt("inserisci la seconda parola");
         }
         return false;
     }
+
+    /**
+     *  
+     */
 
