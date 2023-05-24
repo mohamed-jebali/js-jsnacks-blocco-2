@@ -12,16 +12,18 @@
 
 
 
-let ulElement = document.querySelector(".list");
+let ulElement = document.querySelector("ul");
 
-function addLiElement(liElementItem){
+function addLiElement(liItem){
     let liElement = document.createElement("li");
-    
+    liItem.classList.add("list-item");
+    liElement.innerHTML = "item";
     return liElement;
 }
 
 for(i = 0; i < 10 ;i++){
 
-    let liItem = addLiElement(i);
+    let liItem = addLiElement();
     ulElement.appendChild("liItem");
 }
+console.log(ulElement);
