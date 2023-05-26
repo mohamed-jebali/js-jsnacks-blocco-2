@@ -4,27 +4,24 @@
 
 let listRecipe = [];
 
-let ingredientInput = document.querySelector("#ingredient-input")
+let ingredientInput = document.querySelector("#ingredient-input");
 let buttonAdd = document.querySelector(".add");
+let ulListElement = document.querySelector(".list");
+
+
 let buttonDishGenerator = document.querySelector(".dish-generator");
-let containerImage = document.querySelector("div.image-container");
 
 buttonAdd.addEventListener("click", function (){
-
-    document.createElement("li");
-    inputUser.append(li);
-});
-
-buttonDishGenerator.addEventListener("click", function(){
-
-    generateDish();
+    let inputElement = document.querySelector("input");
+    listRecipe.push(inputElement);
+    ulListElement.innerHTML += "<li>" + inputElement.value + "</li>";
+    inputElement.value = "";
 
 });
 
-function generateDish (){
 
-    
-    let imageDish = document.createElement("img");
+buttonDishGenerator.addEventListener('click', function (){
 
+    document.querySelector("div.image-container").innerHTML =  '<img src="https://source.unsplash.com/700x400/?meal" alt="Random dish image">';
 
-}
+});
