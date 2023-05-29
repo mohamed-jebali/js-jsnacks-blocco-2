@@ -17,7 +17,7 @@
 
 
 
-let LebronJames = {
+let player = {
 
     codiceGiocatore: 99,
     nome: "Lebron",
@@ -25,8 +25,21 @@ let LebronJames = {
     eta: 32,
     mediaPuntiPerPartita: 30,
     percentualeDisuccesoTiri: "70%",
-    stoppate: 10,
-    tiri: 15,
+    stoppate: parseInt(randomNumber(0,30)),
+    tiri: randomNumber(20,100),
+
+}
+console.log(player);
+
+
+function randomNumber (min,max){
+
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 
 }
 
+function stringLenght (length){
+
+
+
+}
