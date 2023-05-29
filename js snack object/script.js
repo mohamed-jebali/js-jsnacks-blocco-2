@@ -23,8 +23,8 @@ let player = {
     nome: "Lebron",
     cognome : "James",
     eta: 32,
-    mediaPuntiPerPartita: 30,
-    percentualeDisuccesoTiri: "70%",
+    mediaPuntiPerPartita: randomNumber(0,50),
+    percentualeDisuccesoTiri: randomNumber(0,100),
     stoppate: parseInt(randomNumber(0,30)),
     tiri: randomNumber(20,100),
 
