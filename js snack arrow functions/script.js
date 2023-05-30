@@ -14,6 +14,12 @@ Infine stampa separatamente i 3 array.
 /** */
 
 
+
+let benzina = [];
+let diesel = [];
+let otherFuel = [];
+
+
 let listCar = [
 
     {
@@ -97,7 +103,7 @@ let listCar = [
 for (let index = 0; index < listCar.length; index++) {
     const carBenzina = listCar[index];
     if (carBenzina.alimentazione === "benzina") {
-        console.log(carBenzina);
+        carBenzina.push(benzina);
     }
 }
 
@@ -106,3 +112,9 @@ listCar.forEach(diesel => {
     if(diesel.alimentazione === "diesel")
     console.log(diesel);
 });
+
+
+
+let otherCars = listCar.filter(car => car.alimentazione !== "benzina" && car.alimentazione !== "diesel");
+
+console.log(otherCars);
