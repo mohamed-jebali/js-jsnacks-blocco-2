@@ -23,7 +23,7 @@ function createPeperone (colore,pesoMax,pesoMin,lunghezzaMax,lunghezzaMin){
     let peperone = {
         colore: colore,
         peso: Math.floor(Math.random() * (pesoMax - pesoMin + 1)) + pesoMin,
-        lunghezza: Math.floor(Math.random() * (lunghezzaMax - lunghezzaMin + 1)) + lunghezzaMin
+        lunghezza: Math.floor(Math.random() * (lunghezzaMax - lunghezzaMin + 1)) + lunghezzaMin,
       };
     return peperone;
 }
