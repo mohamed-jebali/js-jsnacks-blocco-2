@@ -100,3 +100,9 @@ for (let index = 0; index < listCar.length; index++) {
         console.log(carBenzina);
     }
 }
+
+
+listCar.forEach(diesel => {
+    if(diesel.alimentazione === "diesel")
+    console.log(diesel);
+});
