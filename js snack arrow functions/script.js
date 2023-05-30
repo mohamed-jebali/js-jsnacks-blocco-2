@@ -96,5 +96,7 @@ let listCar = [
 
 for (let index = 0; index < listCar.length; index++) {
     const carBenzina = listCar[index];
-    console.log(carBenzina);
+    if (carBenzina.alimentazione === "benzina") {
+        console.log(carBenzina);
+    }
 }
