@@ -103,18 +103,19 @@ let listCar = [
 for (let index = 0; index < listCar.length; index++) {
     const carBenzina = listCar[index];
     if (carBenzina.alimentazione === "benzina") {
-        carBenzina.push(benzina);
+        benzina.push(carBenzina);
+        console.log(benzina);
     }
 }
 
 
-listCar.forEach(diesel => {
-    if(diesel.alimentazione === "diesel")
-    console.log(diesel);
-});
+// listCar.forEach(diesel => {
+//     if(diesel.alimentazione === "diesel")
+//     console.log(diesel);
+// });
 
 
 
-let otherCars = listCar.filter(car => car.alimentazione !== "benzina" && car.alimentazione !== "diesel");
+// let otherCars = listCar.filter(car => car.alimentazione !== "benzina" && car.alimentazione !== "diesel");
 
-console.log(otherCars);
+// console.log(otherCars);
