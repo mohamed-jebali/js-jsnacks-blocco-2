@@ -7,6 +7,7 @@ createApp({
   data() {
     return {
       message: 'Hello For',
+      list:["Rosso","Giallo","Blu","Bianco"],
     };
   }
 }).mount('#app')
